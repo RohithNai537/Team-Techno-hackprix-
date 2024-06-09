@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Website</title>
+    <link rel="stylesheet" href="np.css">
+</head>
+<body>
+    <header>
+        <h1>No Code - ML and DS Analyze the data</h1>
+    </header>
+
+    <main>
+        <section class="option" onclick="window.location.href='np_ml.html'">
+            <h2>Machine Learning</h2>
+            <p>Explore the world of Machine Learning</p>
+        </section>
+
+        <section class="option" onclick="window.location.href='np_ds.html'">
+            <h2>Data Science</h2>
+            <p>Analyze the data through Data Science</p>
+        </section>
+
+        <section class="option" onclick="window.location.href='np_dp.html'">
+            <h2>Data Preprocessing</h2>
+            <p>Prepare your dataset for analysis</p>
+        </section>
+
+        <section class="option">
+            <h2>Upload Dataset</h2>
+            <p>Upload your dataset to analyze the data</p>
+            <!-- Form for file upload -->
+            <form id="uploadForm" action="#" method="post" enctype="multipart/form-data">
+               
+                <div class="upload-container">
+                    <label for="fileInput" class="file-label">Choose File</label>
+                    <input type="file" id="fileInput" name="dataset" required>
+                </div>
+                <input type="submit" value="Upload">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="login-signup">
+            <button onclick="window.location.href='np_lo.html'">Log In</button>
+            <button onclick="window.location.href='np_sg.html'">Sign Up</button>
+        </div>
+    </footer>
+</body>
+</html>
